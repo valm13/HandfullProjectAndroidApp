@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HandfullProjectAndroidApp</string>
+    <string name="offline_access">Accès hors-ligne</string>
+    <string name="email">Adresse E-Mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="valider">Valider</string>
+    <string name="inscription">Inscription</string>
+    <string name="title_login">Connexion</string>
+    <string name="show_hide_password">Show/Hide Password</string>
+    <string name="password_confirm">Confirmation du mot de passe</string>
+    <string name="register_code">Code d\'inscription</string>
+    <string name="title_register">Inscription</string>
+    <string name="password_forgot">Mot de passe oublié</string>
+</resources>
