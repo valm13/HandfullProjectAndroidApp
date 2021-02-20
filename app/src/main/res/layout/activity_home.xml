@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/home_img_arrow_2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_label_prosthesis_connection"
+        app:layout_constraintStart_toEndOf="@+id/home_text_label_prosthesis_connection"
+        app:layout_constraintTop_toTopOf="@+id/home_text_label_prosthesis_connection"
+        app:srcCompat="@drawable/ic_baseline_arrow_right_alt_24" />
+
+    <ImageButton
+        android:id="@+id/home_btn_prosthesis"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/purple_200"
+        android:contentDescription="@string/info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_text_label_prosthesis_connection"
+        app:srcCompat="@drawable/ic_baseline_info_24" />
+
+    <ImageButton
+        android:id="@+id/home_btn_profiles"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/purple_200"
+        android:contentDescription="@string/profil"
+        app:layout_constraintBottom_toBottomOf="@+id/home_btn_prosthesis"
+        app:layout_constraintStart_toEndOf="@+id/home_btn_prosthesis"
+        app:layout_constraintTop_toTopOf="@+id/home_btn_prosthesis"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_library_books_24" />
+
+    <TextView
+        android:id="@+id/home_text_label_prosthesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/home_text_manage_prosthesis"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn_prosthesis"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/home_btn_prosthesis"
+        app:layout_constraintTop_toBottomOf="@+id/home_btn_prosthesis" />
+
+    <TextView
+        android:id="@+id/home_text_label_profiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/home_text_manage_profiles"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn_profiles"
+        app:layout_constraintStart_toStartOf="@+id/home_btn_profiles"
+        app:layout_constraintTop_toBottomOf="@+id/home_btn_profiles" />
+
+    <TextView
+        android:id="@+id/home_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_home"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/home_text_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/home_subtitle"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_text_title"
+        app:layout_constraintStart_toStartOf="@+id/home_text_title"
+        app:layout_constraintTop_toBottomOf="@+id/home_text_title" />
+
+    <TextView
+        android:id="@+id/home_text_label_compte_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/compte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_text_subtitle" />
+
+    <TextView
+        android:id="@+id/home_text_label_prosthesis_connection"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/prothese"
+        app:layout_constraintEnd_toEndOf="@+id/home_text_label_compte_connection"
+        app:layout_constraintStart_toStartOf="@+id/home_text_label_compte_connection"
+        app:layout_constraintTop_toBottomOf="@+id/home_text_label_compte_connection" />
+
+    <ImageView
+        android:id="@+id/home_img_arrow_1"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_label_compte_connection"
+        app:layout_constraintStart_toEndOf="@+id/home_text_label_compte_connection"
+        app:layout_constraintTop_toTopOf="@+id/home_text_label_compte_connection"
+        app:srcCompat="@drawable/ic_baseline_arrow_right_alt_24" />
+
+    <TextView
+        android:id="@+id/home_text_status_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/connected"
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_label_compte_connection"
+        app:layout_constraintStart_toEndOf="@+id/home_img_arrow_1"
+        app:layout_constraintTop_toTopOf="@+id/home_text_label_compte_connection" />
+
+    <TextView
+        android:id="@+id/home_text_status_prosthesis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/disconnected"
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_label_prosthesis_connection"
+        app:layout_constraintStart_toEndOf="@+id/home_img_arrow_2"
+        app:layout_constraintTop_toTopOf="@+id/home_text_label_prosthesis_connection" />
+
+    <ImageView
+        android:id="@+id/btn_exit"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home_text_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/home_text_subtitle"
+        app:srcCompat="@drawable/ic_baseline_logout_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

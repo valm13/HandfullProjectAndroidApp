@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/prosthesis_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_prosthesis"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/pros_text_motor_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/pros_motor_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pros_switch_mode" />
+
+    <TextView
+        android:id="@+id/pros_text_motor_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_motor_2"
+        app:layout_constraintEnd_toEndOf="@+id/pros_text_motor_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_text_motor_1"
+        app:layout_constraintTop_toBottomOf="@+id/pros_text_motor_1" />
+
+    <TextView
+        android:id="@+id/pros_text_motor_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_motor_3"
+        app:layout_constraintEnd_toEndOf="@+id/pros_text_motor_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_text_motor_2"
+        app:layout_constraintTop_toBottomOf="@+id/pros_text_motor_2" />
+
+    <TextView
+        android:id="@+id/pros_text_degres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/pros_degres"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/pros_text_motor_1"
+        app:layout_constraintTop_toBottomOf="@+id/pros_switch_mode" />
+
+    <View
+        android:id="@+id/pros_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/pros_text_motor_3"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/pros_text_choose_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_choose_pos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pros_line" />
+
+    <Button
+        android:id="@+id/pros_btn_close_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/pros_close_hand"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/pros_text_choose_pos"
+        app:layout_constraintTop_toBottomOf="@+id/pros_text_choose_pos" />
+
+    <Button
+        android:id="@+id/pros_btn_strechted_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_open_hand"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/pros_btn_close_hand"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_btn_close_hand"
+        app:layout_constraintTop_toBottomOf="@+id/pros_btn_close_hand" />
+
+    <Button
+        android:id="@+id/pros_btn_strechted_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_stretch_index"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/pros_btn_strechted_index"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_btn_strechted_index"
+        app:layout_constraintTop_toBottomOf="@+id/pros_btn_strechted_index" />
+
+    <Button
+        android:id="@+id/pros_btn_open_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_stretch_thumb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/pros_btn_strechted_thumb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_btn_strechted_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/pros_btn_strechted_thumb" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/pros_edit_motor_1"
+        android:layout_width="122dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="180"
+        app:layout_constraintStart_toEndOf="@+id/pros_text_motor_1"
+        app:layout_constraintTop_toBottomOf="@+id/pros_text_degres" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/pros_edit_motor_2"
+        android:layout_width="122dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="180"
+        app:layout_constraintEnd_toEndOf="@+id/pros_edit_motor_1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_edit_motor_1"
+        app:layout_constraintTop_toBottomOf="@+id/pros_edit_motor_1" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/pros_edit_motor_3"
+        android:layout_width="122dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="180"
+        app:layout_constraintEnd_toEndOf="@+id/pros_edit_motor_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pros_edit_motor_2"
+        app:layout_constraintTop_toBottomOf="@+id/pros_edit_motor_2" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/pros_switch_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pros_mode_manual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prosthesis_text_title" />
+
+    <TextView
+        android:id="@+id/pros_text_degre_motor_1"
+        android:layout_width="44dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pros_edit_motor_1"
+        app:layout_constraintStart_toEndOf="@+id/pros_edit_motor_1"
+        app:layout_constraintTop_toTopOf="@+id/pros_edit_motor_1"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/pros_text_degre_motor_2"
+        android:layout_width="44dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pros_edit_motor_2"
+        app:layout_constraintStart_toEndOf="@+id/pros_edit_motor_2"
+        app:layout_constraintTop_toTopOf="@+id/pros_edit_motor_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pros_text_degre_motor_3"
+        android:layout_width="44dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pros_edit_motor_3"
+        app:layout_constraintStart_toEndOf="@+id/pros_edit_motor_3"
+        app:layout_constraintTop_toTopOf="@+id/pros_edit_motor_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

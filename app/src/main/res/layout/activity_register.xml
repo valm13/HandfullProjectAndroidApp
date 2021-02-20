@@ -6,17 +6,17 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/register.btn.validate"
+        android:id="@+id/register_btn_validate"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:text="@string/valider"
-        app:layout_constraintEnd_toEndOf="@+id/register.edit.password_confirm"
-        app:layout_constraintStart_toStartOf="@+id/register.edit.password_confirm"
-        app:layout_constraintTop_toBottomOf="@+id/register.edit.password_confirm" />
+        app:layout_constraintEnd_toEndOf="@+id/register_edit_password_confirm"
+        app:layout_constraintStart_toStartOf="@+id/register_edit_password_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/register_edit_password_confirm" />
 
     <EditText
-        android:id="@+id/register.edit.password"
+        android:id="@+id/register_edit_password"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -24,13 +24,13 @@
         android:importantForAutofill="no"
         android:inputType="text|textPassword"
         android:singleLine="true"
-        app:layout_constraintEnd_toEndOf="@+id/register.edit.email"
+        app:layout_constraintEnd_toEndOf="@+id/register_edit_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/register.edit.email"
-        app:layout_constraintTop_toBottomOf="@+id/register.edit.email" />
+        app:layout_constraintStart_toStartOf="@+id/register_edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_edit_email" />
 
     <EditText
-        android:id="@+id/register.edit.password_confirm"
+        android:id="@+id/register_edit_password_confirm"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -38,13 +38,13 @@
         android:importantForAutofill="no"
         android:inputType="text|textPassword"
         android:singleLine="true"
-        app:layout_constraintEnd_toEndOf="@+id/register.edit.password"
+        app:layout_constraintEnd_toEndOf="@+id/register_edit_password"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/register.edit.password"
-        app:layout_constraintTop_toBottomOf="@+id/register.edit.password" />
+        app:layout_constraintStart_toStartOf="@+id/register_edit_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_edit_password" />
 
     <EditText
-        android:id="@+id/register.edit.email"
+        android:id="@+id/register_edit_email"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -52,13 +52,13 @@
         android:importantForAutofill="no"
         android:inputType="text|textEmailAddress"
         android:singleLine="true"
-        app:layout_constraintEnd_toEndOf="@+id/register.edit.code"
+        app:layout_constraintEnd_toEndOf="@+id/register_edit_code"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/register.edit.code"
-        app:layout_constraintTop_toBottomOf="@+id/register.edit.code" />
+        app:layout_constraintStart_toStartOf="@+id/register_edit_code"
+        app:layout_constraintTop_toBottomOf="@+id/register_edit_code" />
 
     <EditText
-        android:id="@+id/register.edit.code"
+        android:id="@+id/register_edit_code"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:hint="@string/register_code"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.312" />
 
     <TextView
-        android:id="@+id/register.text.title"
+        android:id="@+id/register_text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_register"

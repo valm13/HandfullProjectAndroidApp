@@ -11,4 +11,27 @@
     <string name="register_code">Code d\'inscription</string>
     <string name="title_register">Inscription</string>
     <string name="password_forgot">Mot de passe oublié</string>
+    <string name="title_home">Accueil</string>
+    <string name="compte">Compte</string>
+    <string name="connected">Connecté</string>
+    <string name="disconnected">Non connecté</string>
+    <string name="home_subtitle">Statuts de connexion</string>
+    <string name="prothese">Prothèse</string>
+    <string name="home_text_manage_profiles">Gestion des profils</string>
+    <string name="profil">profil</string>
+    <string name="logout">logout</string>
+    <string name="right_arrow">Right arrow</string>
+    <string name="home_text_manage_prosthesis">Gestion Prothèse</string>
+    <string name="info">info</string>
+    <string name="title_prosthesis">Gestion prothèse</string>
+    <string name="pros_motor_1">Moteur 1</string>
+    <string name="pros_motor_2">Moteur 2</string>
+    <string name="pros_motor_3">Moteur 3</string>
+    <string name="pros_close_hand">Close hand</string>
+    <string name="pros_open_hand">Open hand</string>
+    <string name="pros_stretch_index">Stretch Index</string>
+    <string name="pros_stretch_thumb">Stretch Thumb</string>
+    <string name="pros_degres">Degrés</string>
+    <string name="pros_mode_manual">Mode manuel</string>
+    <string name="pros_choose_pos">Choisit une position</string>
 </resources>
